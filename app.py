@@ -388,7 +388,7 @@ if submit:
             Please contact the organizer if you need to make changes.
         </div>''', unsafe_allow_html=True)
     else:
-        food_bool = wants_food == "Yes, please! 🙌"
+        food_bool = wants_food == "Yes, please!"
         save_response(name, food_bool, vegan, vegetarian, gluten_free, dairy_free, other_allergies)
         st.markdown(f'''<div class="success-box">
             Thank you, <strong>{name.strip()}</strong>! Your response has been recorded.
